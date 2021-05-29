@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.main-content__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.main-content__form label {
+  display: block;
+}
+
+.main-content__form label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.main-content__form label input {
+  outline: none;
+  width: 75%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.main-content__form label input.error {
+  border-bottom: 5px solid red;
+}
+
+.main-content__form label input.success {
+  border-bottom: 5px solid green;
+}
+
+.main-content__form label p {
+  margin-bottom: 10px;
+}
+
+.main-content__list {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.main-content__list li {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  min-width: 100px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.message {
+  display: none;
+  color: white;
+}
+
+.message > span {
+  display: block;
+  width: 75%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  background: lightcoral;
+}
+/*# sourceMappingURL=styles.css.map */

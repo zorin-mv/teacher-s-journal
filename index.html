@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script type="module" defer src="./js/main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div class="main-content__form">
+                    <button class="btn-add">Add student</button>
+                    <form action="" id="students-form">
+                        <label>
+                            <p>Enter first name</p>
+                            <input name="first-name" type="text">
+                        </label>
+                        <div class="message" data-for="first-name"></div>
+                        <label>
+                            <p>Enter last name</p>
+                            <input name="last-name" type="text">
+                        </label>
+                        <div class="message" data-for="last-name"></div>
+                        <label>
+                            <p>Enter age</p>
+                            <input name="age" type="text">
+                        </label>
+                        <div class="message" data-for="age"></div>
+                        <label>
+                            <p>Enter list of marks</p>
+                            <input name="marks" type="text">
+                        </label>
+                        <div class="message" data-for="marks"></div>
+                    </form>
+                </div>
+                <div class="main-content__list">
+                    <button class="btn-upd">Update</button>
+                    <div class="list-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
